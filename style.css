@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    overflow-x: hidden;
+
+    background-image: url(assets/background.jpg);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    position: sticky;
+    top: -1px;
+}
+
+nav {
+    background-color: #23140d;
+
+    border-bottom: 1px solid #e4742e;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    height: 5vh;
+    width: 100vw;
+    align-items: stretch;
+}
+
+li,
+a:visited,
+a:link {
+    color: #e4742e;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border-left: 1px solid #e4742e
+}
+
+li {
+    list-style: none;
+
+}
+
+a:first-child {
+    border-left: none;
+}
+
+a:hover,
+a:hover>li {
+    background-color: #e4742e;
+    color: #23140d;
+}
+
+#accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+
+}
+
+h1 {
+    box-shadow: 0px 0px 15px #e4742e;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color: #23140d;
+    color: #e4742e;
+    text-align: center;
+    width: 50vw;
+}
+
+#imgaccueil {
+    width: 85%;
+    border: 1px solid #e4742e;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #e4742e;
+}
+
+#menu {
+    display: flex;
+    color: #e4742e;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: larger;
+
+}
+
+.plats {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    border: 1px solid #e4742e;
+    box-shadow: 0px 0px 15px #e4742e;
+    background-color: #23140d;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+
+img {
+    width: 80%;
+    border: 1px solid #e4742e;
+    border-radius: 5px;
+
+}
+
+
+
+p {
+    text-align: center;
+    padding: 0.5%;
+}
+
+.menucategories {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border: 1px solid #e4742e;
+    background-color: #23140d;
+    border-radius: 5px;
+    margin: 0.5%;
+}
+
+#reservation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    border-radius: 20%;
+    border: 1px solid #e4742e;
+    color: #e4742e;
+    box-shadow: 0px 0px 0px #e4742e;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    background-color: #23140d;
+
+}
+
+legend {
+    font-weight: bold;
+
+}
+
+input {
+    height: auto;
+    border: none;
+    border-bottom: 2px solid #e4742e;
+    border-radius: 6px;
+    font-size: 1rem;
+
+}
+
+#nomtel {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    justify-content: center;
+    gap: 3%;
+
+}
+
+#maildate {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    justify-content: center;
+    gap: 3%;
+
+
+
+}
+
+#nombreheure {
+    display: flex;
+    flex-direction: row;
+    padding: 3%;
+    justify-content: center;
+    gap: 3%;
+
+}
+
+button {
+
+    background-color: #e4742e;
+    color: #23140d;
+    width: 50%;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 3%;
+    font-weight: 700;
+    font-size: 1.125rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: scale 1s;
+}
+
+button:hover {
+    scale: 1.05;
+
+}
+
+#cadrecontact {
+    display: flex;
+    justify-content: center;
+}
+
+#contact {
+    display: flex;
+    padding: 5%;
+    margin-bottom: 5%;
+    border: 1px solid #e4742e;
+    border-radius: 10px;
+    gap: 10%;
+    width: 60%;
+    color: #e4742e;
+    font-size: x-large;
+    background-color: #23140d;
+
+
+}
+
+
+#imagecontact {
+
+    height: 50%;
+    width: 50%;
+
+}
+
+
+#textecontact {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    color: #e4742e;
+    justify-content: start;
+    width: 50%;
+
+}
+
+.contactinfo {
+    display: flex;
+    justify-content: start;
+}
+
+
+
+.liencontact:link,
+.liencontact:visited {
+    display: flex;
+    justify-content: start;
+    color: #e4742e;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.liencontact:hover {
+    background: none;
+    color: #e4742e;
+}
+
+footer {
+    color: #e4742e;
+    text-shadow:0px 0px 10px #23140d;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .menucategories {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3%;
+    }
+
+
+    .plats {
+        display: flex;
+        width: 50%;
+        flex-direction: row;
+        align-items: start;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        margin: 2%;
+        border: 1px solid #e4742e;
+        box-shadow: 0px 0px 15px #e4742e;
+        background-color: #23140d;
+        border-radius: 10px;
+        font-size: 1rem;
+    }
+
+
+#reservation{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+#nomtel,
+#maildate ,
+#nombreheure {
+    flex-direction: column;
+}
+
+#contact{
+     flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 3%;
+        width: 80%;
+}
+#imagecontact {
+
+    display: none;
+}
+
+
+#textecontact {
+  display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        margin: 2%;
+       font-size: 1rem;
+}
+
+
+}
