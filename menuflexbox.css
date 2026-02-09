@@ -9,7 +9,7 @@
 :root{
     --primary: #e4742e;
     --dark: #23140d;
-    --bg-img: url(https://media.istockphoto.com/id/2185560361/fr/photo/fond-en-bois-sombre-de-vieilles-planches-texture-de-bois-avec-motif-abstrait.jpg?s=612x612&w=0&k=20&c=YFbI1Y6Fy7QsUq1ahu43x1i-TOiy77RuTJNjeV3_D1M=);
+    --bg-img: url(assets/background.jpg);
 }
 
 body {
