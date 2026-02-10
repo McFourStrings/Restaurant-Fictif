@@ -301,7 +301,7 @@ overflow-x: hidden;
 font-size: 1rem;;
 }
 
-li{
+li,h1{
     font-size: 1rem;
 }
     .menucategories {
@@ -369,5 +369,6 @@ li{
 
 
 }
+
 
 
